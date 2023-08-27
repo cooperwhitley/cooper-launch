@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(38, 46, 58);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid-container {
+    display: grid;
+    margin: 0;
+    height: 50vh;
+    width: 50vw;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: bisque;
+}
+
+#greet {
+    grid-area: 1 / 4 / 2 / 7;
+    text-align: center;
+    align-self: center;
+}
+
+#link-1 {
+    grid-area: 3 / 5 / 4 / 9;
+}
+#link-2 {
+    grid-area: 4 / 5 / 5 / 9;
+}
+#link-3 {
+    grid-area: 5 / 5 / 6 / 9;
+}
+
+.link {
+    text-align: center;
+    align-self: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
